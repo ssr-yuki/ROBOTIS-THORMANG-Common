@@ -1,10 +1,6 @@
 <?xml version="1.0"?>
 <!-- Revolute-Revolute Manipulator -->
 <robot name="thormang3" xmlns:xacro="http://www.ros.org/wiki/xacro">
-  
-  <!-- some parameters -->
-  <xacro:property name="pi" value="3.141592654" />
-
   <!-- Import all Gazebo-customization elements, including Gazebo colors -->
   <xacro:include filename="$(find thormang3_description)/urdf/thormang3.gazebo" />
   <!-- Import Rviz colors -->
