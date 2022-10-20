@@ -3,7 +3,7 @@
     <xacro:macro name="thormang3_head" params="parent">
 
 	<!-- head yaw joint -->
-        <joint name="head_y" type="revolute">
+        <joint name="head_y" type="fixed">
           <axis xyz="0 0 1" />		
           <origin xyz="0.0 0.0 0.229" rpy="0 0 0"/>
           <parent link="${parent}"/>
@@ -38,7 +38,7 @@
         </link>
 
 	<!-- head pitch joint -->
-        <joint name="head_p" type="revolute">
+        <joint name="head_p" type="fixed">
           <axis xyz="0 1 0" />		
           <origin xyz="0.0 -0.045 0.039" rpy="0 0 0"/>
           <parent link="head_y_link"/>
